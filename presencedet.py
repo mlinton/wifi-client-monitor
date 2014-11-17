@@ -50,7 +50,7 @@ def threaded_sniff_target(q):
 
 
 #main thread - will exit on control-c
-def threaded_sniff()
+def threaded_sniff():
 	q = Queue()
 	sniffer = Thread(target = threaded_sniff_target, args = (q,))
 	sniffer.daemon = True
